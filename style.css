@@ -1,0 +1,128 @@
+:root {
+  --btn-color: #596d48;
+  --input-color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Titillium";
+  src: url("/fonts/TitilliumWeb-Regular.ttf");
+}
+
+/* header-pic */
+.header-pic {
+  background-image: url(/img/halie-west-unsplash.jpg);
+  background-size: cover;
+  display: grid;
+  width: 100%;
+  height: 20vh;
+  padding: 15px 0 10px 0;
+}
+
+.header-pic > img {
+  justify-self: center;
+  align-self: center;
+  width: 50px;
+}
+
+.header-pic > h2 {
+  color: white;
+  font-family: "Titillium", sans-serif;
+  justify-self: center;
+}
+
+/* mainform */
+.mainform {
+  display: grid;
+}
+
+.mainform > h3 {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+
+.mainform > form > ul li {
+  display: grid;
+  padding: 10px 20px 10px 20px;
+}
+
+.mainform > form > ul li > label {
+  font-size: 0.75rem;
+}
+
+.mainform > form > ul li > input {
+  border: 1px solid #e5e7eb;
+  padding: 5px;
+}
+
+.mainform > form > ul li > input:focus {
+  outline: none;
+}
+
+.mainform > form > ul li > input.focus {
+  border: 1px solid blue;
+  box-shadow: 1px 1px 1px black;
+}
+
+.mainform > form > ul li > input.error {
+  border: 1px solid red;
+}
+
+.mainform > form > ul li > button {
+  background-color: #596d48;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.mainform > form > ul li > p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .mainform {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .mainform {
+    width: 50%;
+  }
+}
+
+/* @media (min-width: 1000px) {
+  .mainform > form ul {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 150px);
+    grid-auto-flow: column;
+  }
+  .header-pic {
+    background-image: url(/img/halie-west-unsplash.jpg);
+    background-size: fit;
+    display: grid;
+    width: 50vw;
+    height: 120vh;
+    padding: 15px 0 10px 0;
+  }
+  .header-pic > img {
+    justify-self: center;
+    align-self: center;
+    width: 100px;
+  }
+  body {
+    display: grid;
+    grid-auto-flow: column;
+  }
+} */
