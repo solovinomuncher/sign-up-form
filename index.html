@@ -15,7 +15,7 @@
     </header>
     <main class="mainform">
         <h3>This is not a real online service! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis quidem delectus saepe molestias reprehenderit totam, voluptatibus amet nulla eveniet.</h3>
-        <form action="" method="post">
+        <form action="#" method="post">
             <ul>
                 <li>
                     <label for="fname">FIRST NAME</label>
@@ -35,11 +35,26 @@
                 </li>
                 <li>
                     <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="password" class="error">
+                    <input type="password" id="pwd" name="password" class="error" 
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    <div class="password-requirements">
+                        <p>Password should contain:</p>
+                        <ul>
+                            <li>At least 1 uppercase letter</li>
+                            <span></span>
+                            <li>At least 1 lowercase letter</li>
+                            <span></span>
+                            <li>At least 1 number or special character</li>
+                            <span></span>
+                            <li>At least 8 characters long</li>
+                            <span></span>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-pwd" name="confirm-password" class="error">
+                    <input type="password" id="confirm-pwd" name="confirm-password" class="error" min=4
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                 </li>
                 <li>
                     <button type="submit">Create Account</button>
