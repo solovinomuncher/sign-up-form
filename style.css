@@ -90,13 +90,25 @@
 
 .mainform > form > ul li > p {
   text-align: center;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
 }
 
 .password-requirements {
   background: lightgray;
   padding: 10px;
   margin: 10px 0 0 0;
+}
+
+.password-requirements > ul > li {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 8fr 2fr;
+}
+
+span {
+  font-size: 0.9rem;
+  color: blue;
+  justify-self: end;
 }
 
 @media (min-width: 500px) {
