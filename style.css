@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "Titillium";
-  src: url("./fonts/TitilliumWeb-Regular.ttf");
+  src: url("./fonts/TitilliumWeb-Regular.TTF");
 }
 
 /* header-pic */
 .header-pic {
-  background-image: url(./img/halie-west-unsplash.jpg);
+  background-image: url(img/halie-west-unsplash.JPG);
   background-size: cover;
   display: grid;
   width: 100%;
